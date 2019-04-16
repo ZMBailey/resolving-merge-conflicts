@@ -5,10 +5,14 @@ class Snake:
 
 class Cobra(Snake):
     """Definitely dangerous, yup."""
-    
+    def __init__(self,venom):
+	self.venom = venom    
+
     def bite(self, other):
         """Deliver a dose of venom."""
-        pass
+        if other.immune == False:
+		other.poisoned == True
+		other.poison_timer = 10 * self.venom
 
     
 class BoaConstrictor(Snake):
