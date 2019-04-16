@@ -20,7 +20,8 @@ class BoaConstrictor(Snake):
     
     def squeeze(self, other):
         """Give a hug."""
-        pass
+        self.sqeezing = true
+	other.status = grappled
 
     
 class BoatConstrictor(BoaConstrictor):
